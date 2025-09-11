@@ -1,32 +1,37 @@
 package oops.classobj;
 
-import java.util.Scanner;
-
 public class TestApp1 
 {
+	// 2. Mf's
 	public static void main(String[] args) 
 	{
-		// Student - reference variable TYPE(className)
-		// s - reference variable
-		// new  - create object
-		// Student() --- object
-		
-		Student s = new Student();
-	
-		System.out.println("s--reference variable : " + s);
+		// Data--store--object(dm's--private , Mf's--public)
 
-		Scanner sc = new Scanner(System.in);
+		Student s1= new Student();
 		
-		System.out.println("Enter Rno : "); 
-		s.rno = sc.nextInt();
-		sc.nextLine();
-		System.out.println("Enter Name : "); 
-		s.name = sc.nextLine();
-		System.out.println("Enter Std : "); 
-		s.std = sc.nextInt();
-		System.out.println("Enter Marks : "); 
-		s.marks = sc.nextInt();
+		s1.setRno(1);
+		s1.setName("Ankur");
+		s1.setStd(12);
+		s1.setMarks(100);
 		
-		System.out.println(s.rno+" " + s.name+" " + s.std+" " + s.marks);
+		System.out.println(s1.getRno()+" "+s1.getName()+" " + s1.getStd()+" " + s1.getMarks());
+		
+		// obj--reference variable
+		// Student--ClassName
+//		Student obj1 = new Student();
+//		Student obj2 = new Student();
+		
+		
+//		Student s[] = new Student[5];
+//		for (int i = 0; i < s.length; i++) 
+//		{
+//			s[i] = new Student();
+//			s[i].scanData();
+//			
+//		}
+//		for (int i = 0; i < s.length; i++) 
+//		{
+//			s[i].dispData();
+//		}
 	}
 }
