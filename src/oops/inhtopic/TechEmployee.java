@@ -1,4 +1,4 @@
-package oops.inhtopic.si;
+package oops.inhtopic;
 
 // MultiLevel Inheritance
 public class TechEmployee extends Employee

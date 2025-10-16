@@ -1,6 +1,6 @@
-package oops.inhtopic.si;
+package oops.inhtopic;
 
-// Single Inheritance
+// Hierarchycal Inheritance
 public class Employee extends Person
 {
 	protected int id;
@@ -26,5 +26,10 @@ public class Employee extends Person
 	}
 	public void setDsgn(String dsgn) {
 		this.dsgn = dsgn;
+	}
+	
+	public void dispData() 
+	{
+		System.out.println(id+" " + name+" " + dsgn);
 	}
 }

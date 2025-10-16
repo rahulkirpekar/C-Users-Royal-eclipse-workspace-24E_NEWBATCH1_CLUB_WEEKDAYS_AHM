@@ -1,4 +1,4 @@
-package oops.inhtopic.si;
+package oops.inhtopic;
 
 public class TestApp1 
 {
