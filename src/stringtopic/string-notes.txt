@@ -49,21 +49,22 @@ String Object Equality:-
 	SOP(name1==name6);//false		SOP(name1.equals(name6));// false
 
 	SOP(name2==name6);//true		SOP(name2.equals(name6));// true
-
-
-	
-
-	
-
-
-
-
+--------------------------------------------------------------------------------------------------------------------------------------
 	2.By new Keyword way:-[ RAM---->"HEAP"]
 	-------------------------------------------------
 	
 		String name1 = new String("royal");
 		String name2 = new String("technosoft");
 		String name3 = new String("royal");
+		String name4 = name1;
+
+
+	1. referenceBased(==)			2. valueBased(equals())
+	----------------------			------------------------
+	SOP(name1==name2);// false		SOP(name1.equals(name2));// false
+	SOP(name1==name3);// false		SOP(name1.equals(name3));// true
+	SOP(name1==name4);// true		SOP(name1.equals(name4));// true
+
 
 
 
