@@ -2,7 +2,8 @@ package multithreaddingtopic.bythread.task2;
 
 public class Table 
 {
-	public void printTable(int no) 
+	// Threadsafe---At a time Single threadd access resource
+	public synchronized void printTable(int no) 
 	{
 		for (int i = 1; i <= 10; i++) 
 		{
