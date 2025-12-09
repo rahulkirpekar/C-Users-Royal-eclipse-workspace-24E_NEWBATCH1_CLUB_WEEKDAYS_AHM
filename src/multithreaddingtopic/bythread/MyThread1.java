@@ -35,10 +35,26 @@ public class MyThread1 extends Thread
 		th3.setName("Java");
 		th4.setName("Python");
 		th5.setName("Scala");
+		
+		th1.setPriority(Thread.NORM_PRIORITY);// 5
+		th2.setPriority(Thread.MIN_PRIORITY);//1
+		th3.setPriority(Thread.MAX_PRIORITY);// 10
+		th4.setPriority(Thread.NORM_PRIORITY);
+		th5.setPriority(Thread.MIN_PRIORITY);
 
 		// th1---object---.start()---normal object---convert into thread 
 		th1.start();// th1---callstack(execution area)
-		th1.start();// th1---callstack(execution area)---[IllegalThreadStateException]
+//		th1.start();// th1---callstack(execution area)---[IllegalThreadStateException]
+		
+//		try 
+//		{
+////			th1.join();
+//			th1.join(500);
+//		} catch (InterruptedException e) 
+//		{
+//			e.printStackTrace();
+//		}
+		
 		
 		th2.start();// th2---callstack(execution area)
 		th3.start();// th3---callstack(execution area)
